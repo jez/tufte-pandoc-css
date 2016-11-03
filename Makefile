@@ -36,4 +36,4 @@ clean:
 .PHONY: docs
 docs:
 	cp -r $(STYLES) tufte-css/et-book/ docs/
-	cp -r $(STYLES) tufte-css/et-book/ tufte-css/img/ docs/tufte-md/
+	cp -r $(STYLES) tufte-css/et-book/ tufte-css/img/ tufte-css/latex.css docs/tufte-md/
