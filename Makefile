@@ -24,3 +24,12 @@ all: $(TARGETS)
 		$(foreach style,$(STYLES),--css $(style)) \
 		--output $@ \
 		$<
+
+# The default tufte.css file expects all the assets to be in the same folder.
+# In real life, instead of duplicating the files you'd want to put them in a
+# shared "css/" folder or something, and adjust the `--css` flags to the pandoc
+# command to give the correct paths to each CSS file.
+.PHONY: docs
+docs:
+	cp -r $(STYLES) tufte-css/et-book/ docs/
+	cp -r $(STYLES) tufte-css/et-book/ tufte-css/img/ docs/tufte-md/
