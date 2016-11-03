@@ -65,7 +65,7 @@ Second, download `tufte.css` and the `et-book/` font folder.
 Third, there are a number of static files you can download and place where you
 see fit:
 
-- `tufte.html`
+- `tufte.html5`
   - This is an HTML5 compatible template for use with Pandoc's `--template`
     flag.
   - It sets up the document structure in a way Tufte CSS expects.
@@ -133,13 +133,11 @@ make my-pandoc-markdown-file.md
 [Tufte CSS]: https://edwardtufte.github.io/tufte-css/
 [`tufte-css`]: https://github.com/edwardtufte/tufte-css
 [`pandoc-sidenote`]: https://github.com/jez/pandoc-sidenote
-[tufte-md]: #TODO
-[Tufte Pandoc CSS homepage]: #TODO
-[tufte-md-src]: #TODO
-[homepage-src]: #TODO
-[`Makefile`]: #TODO
+[tufte-md]: https://jez.io/tufte-pandoc-css/tufte-md/
+[Tufte Pandoc CSS homepage]: https://jez.io/tufte-pandoc-css/
+[tufte-md-src]: docs/tufte-md/index.md
+[homepage-src]: docs/index.md
+[`Makefile`]: Makefile
 
 TODO: pandoc-sidenote GitHub
-TODO: reimplement tufte-css in md
 TODO: Tufte Pandoc CSS homepage
-TODO: Makefile
