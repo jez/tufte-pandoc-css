@@ -21,7 +21,7 @@ all: $(TARGETS)
 		--filter pandoc-sidenote \
 		--to html5 \
 		--template=tufte \
-		$(foreach style,$(STYLES),--css $(style)) \
+		$(foreach style,$(STYLES),--css $(notdir $(style))) \
 		--output $@ \
 		$<
 
