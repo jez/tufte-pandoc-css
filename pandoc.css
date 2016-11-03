@@ -52,6 +52,7 @@ pre:not(.sourceCode) {
   margin: -0.7rem -1.4rem;
   width: 55%;
   font-size: 0.9rem;
+  overflow-x: auto;
 }
 
 div.sourceCode code,
