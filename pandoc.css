@@ -51,6 +51,12 @@ pre:not(.sourceCode) {
   padding: 1.4rem;
   margin: -0.7rem -1.4rem;
   width: 55%;
+  font-size: 0.9rem;
+}
+
+div.sourceCode code,
+pre:not(.sourceCode) code {
+  font-size: 0.9rem;
 }
 
 .fullwidth div.sourceCode,
@@ -74,5 +80,5 @@ div.sourceCode pre {
 /* Pandoc-generated line numbers need the same stylings as normal <code> */
 .lineNumbers pre {
   line-height: 1.42;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
