@@ -1,5 +1,6 @@
-# What to compile by default? All *.md files where in this folder
-SOURCES := $(shell find . -name '*.md')
+# What to compile by default?
+SOURCES := docs/index.md \
+	docs/tufte-md/index.md
 TARGETS := $(patsubst %.md,%.html,$(SOURCES))
 
 STYLES := tufte-css/tufte.css \
@@ -11,7 +12,7 @@ STYLES := tufte-css/tufte.css \
 all: $(TARGETS)
 
 ## Generalized rule: how to build a .html file from each .md
-%.html: %.md tufte.html $(STYLES)
+%.html: %.md tufte.html5 $(STYLES)
 	pandoc \
 		--katex \
 		--smart \
@@ -21,5 +22,5 @@ all: $(TARGETS)
 		--to html5 \
 		--template=tufte \
 		$(foreach style,$(STYLES),--css $(style)) \
-		--output $@
+		--output $@ \
 		$<
