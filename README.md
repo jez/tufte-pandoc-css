@@ -138,6 +138,3 @@ make my-pandoc-markdown-file.md
 [tufte-md-src]: docs/tufte-md/index.md
 [homepage-src]: docs/index.md
 [`Makefile`]: Makefile
-
-TODO: pandoc-sidenote GitHub
-TODO: Tufte Pandoc CSS homepage
