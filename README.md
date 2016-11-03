@@ -65,7 +65,7 @@ Second, download `tufte.css` and the `et-book/` font folder.
 Third, there are a number of static files you can download and place where you
 see fit:
 
-- `pandoc.html`
+- `tufte.html`
   - This is an HTML5 compatible template for use with Pandoc's `--template`
     flag.
   - It sets up the document structure in a way Tufte CSS expects.
