@@ -1,6 +1,6 @@
 div.sourceCode, pre:not(.sourceCode) { background: #FDF6E3; }
 pre code { color: #657B83; }
-code > span.kw { color: #859900; font-weight: normal; font-style: normal; } /* Keyword */
+code > span.kw { color: #859900; font-weight: bold;   font-style: normal; } /* Keyword */
 code > span.dt { color: #B58900; font-weight: normal; font-style: normal; } /* DataType */
 code > span.dv { color: #2AA198; font-weight: normal; font-style: normal; } /* DecVal */
 code > span.bn { color: #2AA198; font-weight: normal; font-style: normal; } /* BaseN */
@@ -19,8 +19,8 @@ code > span.vs { color: #657B83; font-weight: normal; font-style: normal; } /* V
 code > span.ss { color: #DC322F; font-weight: normal; font-style: normal; } /* SpecialString */
 code > span.im { color: #657B83; font-weight: normal; font-style: normal; } /* Import */
 code > span.va { color: #268BD2; font-weight: normal; font-style: normal; } /* Variable */
-code > span.cf { color: #859900; font-weight: normal; font-style: normal; } /* ControlFlow */
-code > span.op { color: #859900; font-weight: normal; font-style: normal; } /* Operator */
+code > span.cf { color: #859900; font-weight: bold;   font-style: normal; } /* ControlFlow */
+code > span.op { color: #859900; font-weight: bold;   font-style: normal; } /* Operator */
 code > span.bu { color: #657B83; font-weight: normal; font-style: normal; } /* BuiltIn */
 code > span.ex { color: #657B83; font-weight: normal; font-style: normal; } /* Extension */
 code > span.pp { color: #CB4B16; font-weight: normal; font-style: normal; } /* Preprocessor */
