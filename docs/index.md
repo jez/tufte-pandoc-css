@@ -147,8 +147,8 @@ files to help you with your next Markdown project. You can learn what files and
 tools are available on the [GitHub repository].
 
 As for usage, you are strongly encouraged to look at the [source of this
-document](index.md). There's also a HTML-to-Markdown port of [the original Tufte
-CSS page] along with the accompanying [source](tufte-md/index.md).
+document](index.md). There's also an HTML-to-Markdown port of [the original
+Tufte CSS page] along with the accompanying [source](tufte-md/index.md).
 
 One goal of this project is to support as many of the features you'd "expect" to
 work that are available in Pandoc. If your favorite feature doesn't work, let us
