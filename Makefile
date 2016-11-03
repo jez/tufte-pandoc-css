@@ -25,6 +25,10 @@ all: $(TARGETS)
 		--output $@ \
 		$<
 
+.PHONY: clean
+clean:
+	rm $(TARGETS)
+
 # The default tufte.css file expects all the assets to be in the same folder.
 # In real life, instead of duplicating the files you'd want to put them in a
 # shared "css/" folder or something, and adjust the `--css` flags to the pandoc
