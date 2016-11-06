@@ -20,6 +20,11 @@ Apart from projects like Tufte CSS & Pandoc, the main project that enables this
 project is [`pandoc-sidenote`], a project which converts Pandoc Markdown-style
 footnotes (`[^1]`) into side notes.
 
+> **Looking to use this with Jekyll?**
+>
+> You might be interested in [Tufte Pandoc Jekyll], which wraps the files
+> distributed here into a Jekyll gem-based theme.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
@@ -135,6 +140,7 @@ make my-pandoc-markdown-file.md
 [`pandoc-sidenote`]: https://github.com/jez/pandoc-sidenote
 [tufte-md]: https://jez.io/tufte-pandoc-css/tufte-md/
 [Tufte Pandoc CSS homepage]: https://jez.io/tufte-pandoc-css/
+[Tufte Pandoc Jekyll]: https://github.com/jez/tufte-pandoc-jekyll
 [tufte-md-src]: docs/tufte-md/index.md
 [homepage-src]: docs/index.md
 [`Makefile`]: Makefile
