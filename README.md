@@ -20,7 +20,7 @@ Apart from projects like Tufte CSS & Pandoc, the main project that enables this
 project is [`pandoc-sidenote`], a project which converts Pandoc Markdown-style
 footnotes (`[^1]`) into side notes.
 
-> **Looking to use this with Jekyll?**
+> ### Looking to use this with Jekyll?
 >
 > You might be interested in [Tufte Pandoc Jekyll], which wraps the files
 > distributed here into a Jekyll gem-based theme.
