@@ -65,7 +65,7 @@ Second, download `tufte.css` and the `et-book/` font folder.
 - You should be able to work with any version of Tufte CSS, assuming things
   haven't changed too much.
 - If things don't seem to be working, try using the version stashed in the
-  `tufte-css/` folder in this repo.
+  `tufte-css/` folder in this repo (it's a submodule).
 
 Third, there are a number of static files you can download and place where you
 see fit:
@@ -117,6 +117,7 @@ make docs/index.md
 and here's how we build all the site files:
 
 ```
+make docs
 make
 ```
 
