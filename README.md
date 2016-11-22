@@ -49,6 +49,12 @@ built on top of here:
 
 ## Installation
 
+> ### Dependencies
+>
+> `pandoc-sidenote` is built against Pandoc version 1.18. You'll need to upgrade
+> to this version. If a newer version has been released, `pandoc-sidenote` will
+> need to be rebuilt for that version.
+
 This project is meant to be a set of *starter* files for your next project. What
 that ultimately means is that you should use these files however your heart sees
 fit. In practice, here are some tips for some things you may want to do to get
