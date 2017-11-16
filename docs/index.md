@@ -147,8 +147,8 @@ files to help you with your next Markdown project. You can learn what files and
 tools are available on the [GitHub repository].
 
 As for usage, you are strongly encouraged to look at the [source of this
-document](index.md). There's also an HTML-to-Markdown port of [the original
-Tufte CSS page] along with the accompanying [source](tufte-md/index.md).
+document][this-md]. There's also an HTML-to-Markdown port of [the original
+Tufte CSS page] along with the accompanying [source][original-md].
 
 One goal of this project is to support as many of the features you'd "expect" to
 work that are available in Pandoc. If your favorite feature doesn't work, let us
@@ -161,5 +161,7 @@ know [with an issue].
 [JSON filter]: http://pandoc.org/scripting.html#json-filters
 [`pandoc-sidenote`]: https://github.com/jez/pandoc-sidenote
 [GitHub repository]: https://github.com/jez/tufte-pandoc-css
+[this-md]: https://raw.githubusercontent.com/jez/tufte-pandoc-css/master/docs/index.md
 [the original Tufte CSS page]: tufte-md/
+[original-md]: https://raw.githubusercontent.com/jez/tufte-pandoc-css/master/docs/tufte-md/index.md
 [with an issue]: https://github.com/jez/tufte-pandoc-css/issues
