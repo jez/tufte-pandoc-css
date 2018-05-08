@@ -15,11 +15,10 @@ all: $(TARGETS)
 %.html: %.md tufte.html5 $(STYLES)
 	pandoc \
 		--katex \
-		--smart \
 		--section-divs \
 		--from markdown+tex_math_single_backslash \
 		--filter pandoc-sidenote \
-		--to html5 \
+		--to html5+smart \
 		--template=tufte \
 		$(foreach style,$(STYLES),--css $(notdir $(style))) \
 		--output $@ \
