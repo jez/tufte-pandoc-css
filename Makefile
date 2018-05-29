@@ -11,15 +11,22 @@ STYLES := tufte-css/tufte.css \
 .PHONY: all
 all: $(TARGETS)
 
+# smart html 5 is different in pandoc 1 and pandoc 2
+PANDOCVERSIONGTEQ2 := $(shell expr `pandoc --version | grep ^pandoc | sed 's/^.* //g' | cut -f1 -d.` \>= 2)
+ifeq "$(PANDOCVERSIONGTEQ2)" "1"
+	SMART_HTML := --to html5+smart
+else
+	SMART_HTML := --smart --to html5
+endif
+
 ## Generalized rule: how to build a .html file from each .md
 %.html: %.md tufte.html5 $(STYLES)
 	pandoc \
 		--katex \
-		--smart \
 		--section-divs \
 		--from markdown+tex_math_single_backslash \
 		--filter pandoc-sidenote \
-		--to html5 \
+		$(SMART_HTML) \
 		--template=tufte \
 		$(foreach style,$(STYLES),--css $(notdir $(style))) \
 		--output $@ \
