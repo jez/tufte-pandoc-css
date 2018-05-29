@@ -51,9 +51,12 @@ built on top of here:
 
 > ### Dependencies
 >
-> `pandoc-sidenote` is built against Pandoc version 1.18. You'll need to upgrade
-> to this version. If a newer version has been released, `pandoc-sidenote` will
-> need to be rebuilt for that version.
+> This project is always tested relative to:
+>
+> - the most recent `master` commit of [`tufte-css`].
+> - the latest release version of pandoc
+>
+> In particular, you'll need at least Pandoc version 2.0.
 
 This project is meant to be a set of *starter* files for your next project. What
 that ultimately means is that you should use these files however your heart sees
