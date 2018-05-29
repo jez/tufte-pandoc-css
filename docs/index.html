@@ -5,44 +5,73 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Jake Zimmerman">
+  <meta name="dcterms.date" content="2016-11-03">
   <title>Tufte Pandoc CSS</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="tufte.css">
   <link rel="stylesheet" href="pandoc.css">
@@ -59,9 +88,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p class="subtitle">Starter files for Pandoc Markdown with Tufte CSS</p>
 <p class="byline">November 3, 2016 &ndash; Jake Zimmerman</p>
 </header>
-<p>Tufte Pandoc CSS is an attempt to make it as easy as possible to get started using <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a><span><label for="sn-1" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="marginnote"> If you’ve never heard of Tufte CSS before, take a second to check it out!<br />
+<section>
+<p>Tufte Pandoc CSS is an attempt to make it as easy as possible to get started using <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a><span><label for="sn-0" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="marginnote"> If you’ve never heard of Tufte CSS before, take a second to check it out!<br />
 <br />
 </span></span> to write content. It does this by leveraging Pandoc Markdown’s existing features, along with a few new ones implemented as a <a href="http://pandoc.org/scripting.html#json-filters">JSON filter</a>.</p>
+</section>
 <section id="sidenotes-in-markdown" class="level2">
 <h2>Sidenotes in Markdown</h2>
 <div class="epigraph">
@@ -73,69 +104,56 @@ Dave Liepmann, <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a>
 </blockquote>
 </div>
 <p>Tufte Pandoc CSS aims to be a set of <em>starter files</em> for your next project. What that means is that it provides a number of CSS files, a Pandoc template, a Makefile, and more to make it as easy as possible to write Markdown using Tufte CSS.</p>
-<p>The biggest barrier that this project overcomes is that Pandoc Markdown doesn’t support side notes nor margin notes by default. This project adds that functionality.<span><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"/><span class="sidenote">In particular, a separate library called <a href="https://github.com/jez/pandoc-sidenote"><code>pandoc-sidenote</code></a> handles the transformation of footnotes into sidenotes.<br />
+<p>The biggest barrier that this project overcomes is that Pandoc Markdown doesn’t support side notes nor margin notes by default. This project adds that functionality.<span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">In particular, a separate library called <a href="https://github.com/jez/pandoc-sidenote"><code>pandoc-sidenote</code></a> handles the transformation of footnotes into sidenotes.<br />
 <br />
 </span></span> Here’s how you can use them:</p>
-<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">... In print, Tufte has used the proprietary Monotype
-Bembo<span class="ot">[^note]</span> font. ...
-
-<span class="ot">[^note]</span>:
-  See Tufte&#39;s comment in the Tufte book fonts thread.</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb1-1" data-line-number="1">... In print, Tufte has used the proprietary Monotype</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">Bembo<span class="ot">[^note]</span> font. ...</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="ot">[^note]</span>:</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">  See Tufte&#39;s comment in the Tufte book fonts thread.</a></code></pre></div>
 <p>By default, if you use the normal Pandoc syntax for creating footnotes, they’ll become Tufte CSS-style side notes. To get margin notes (i.e., side notes without numbers), just include <code>{-}</code> at the beginning of the note:</p>
 <figure class="fullwidth">
-<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">... If you want a sidenote without footnote-style numberings, then you want a
-margin note.<span class="ot">[^mn]</span> On large screens, ...
-
-<span class="ot">[^mn]</span>:
-  {-} This is a margin note. Notice there isn&#39;t a number preceding the note.</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb2-1" data-line-number="1">... If you want a sidenote without footnote-style numberings, then you want a</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">margin note.<span class="ot">[^mn]</span> On large screens, ...</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="ot">[^mn]</span>:</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">  {-} This is a margin note. Notice there isn&#39;t a number preceding the note.</a></code></pre></div>
 </figure>
 </section>
 <section id="syntax-highlighted-codeblocks" class="level2">
 <h2>Syntax-Highlighted Codeblocks</h2>
 <p>Pandoc Markdown is excellent for styling code blocks. Indeed, you’ve already seen their effect in this document. You can use any of the methods for creating syntax highlighted code blocks Pandoc permits. For example:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Compute elements of the mandelbrot set</span>
-<span class="kw">def</span> mandelbrot(a):
-    <span class="cf">return</span> <span class="bu">reduce</span>(<span class="kw">lambda</span> z, _: z <span class="op">*</span> z <span class="op">+</span> a, <span class="bu">range</span>(<span class="dv">50</span>), <span class="dv">0</span>)
-
-<span class="kw">def</span> step(start, step, iterations):
-    <span class="cf">return</span> (start <span class="op">+</span> (i <span class="op">*</span> step) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(iterations))
-
-rows <span class="op">=</span> ((<span class="st">&quot;*&quot;</span> <span class="cf">if</span> <span class="bu">abs</span>(mandelbrot(<span class="bu">complex</span>(x, y))) <span class="op">&lt;</span> <span class="dv">2</span> <span class="cf">else</span> <span class="st">&quot; &quot;</span>
-        <span class="cf">for</span> x <span class="kw">in</span> step(<span class="op">-</span><span class="fl">2.0</span>, .<span class="dv">0315</span>, <span class="dv">80</span>))
-        <span class="cf">for</span> y <span class="kw">in</span> step(<span class="dv">1</span>, <span class="op">-</span>.<span class="dv">05</span>, <span class="dv">41</span>))</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># Compute elements of the mandelbrot set</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">def</span> mandelbrot(a):</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">    <span class="cf">return</span> <span class="bu">reduce</span>(<span class="kw">lambda</span> z, _: z <span class="op">*</span> z <span class="op">+</span> a, <span class="bu">range</span>(<span class="dv">50</span>), <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw">def</span> step(start, step, iterations):</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">    <span class="cf">return</span> (start <span class="op">+</span> (i <span class="op">*</span> step) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(iterations))</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">rows <span class="op">=</span> ((<span class="st">&quot;*&quot;</span> <span class="cf">if</span> <span class="bu">abs</span>(mandelbrot(<span class="bu">complex</span>(x, y))) <span class="op">&lt;</span> <span class="dv">2</span> <span class="cf">else</span> <span class="st">&quot; &quot;</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">        <span class="cf">for</span> x <span class="kw">in</span> step(<span class="op">-</span><span class="fl">2.0</span>, <span class="fl">.0315</span>, <span class="dv">80</span>))</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">        <span class="cf">for</span> y <span class="kw">in</span> step(<span class="dv">1</span>, <span class="fl">-.05</span>, <span class="dv">41</span>))</a></code></pre></div>
 <p>In this document, you’re also seeing the effect of the Solarized color scheme. You can use any of the color schemes Pandoc ships with by default, or this one.</p>
 <p>Another feature Pandoc allows that Tufte Pandoc CSS supports is generating line numbers to accompany a code sample:</p>
-<div class="sourceCode"><table class="sourceCode haskell numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="sourceCode"><pre><code class="sourceCode haskell">merge []         ys                   <span class="fu">=</span> ys
-merge xs         []                   <span class="fu">=</span> xs
-merge xs<span class="fu">@</span>(x<span class="fu">:</span>xt) ys<span class="fu">@</span>(y<span class="fu">:</span>yt) <span class="fu">|</span> x <span class="fu">&lt;=</span> y    <span class="fu">=</span> x <span class="fu">:</span> merge xt ys
-                          <span class="fu">|</span> otherwise <span class="fu">=</span> y <span class="fu">:</span> merge xs yt
-
-split (x<span class="fu">:</span>y<span class="fu">:</span>zs) <span class="fu">=</span> <span class="kw">let</span> (xs,ys) <span class="fu">=</span> split zs <span class="kw">in</span> (x<span class="fu">:</span>xs,y<span class="fu">:</span>ys)
-split [x]      <span class="fu">=</span> ([x],[])
-split []       <span class="fu">=</span> ([],[])
-
-mergeSort []  <span class="fu">=</span> []
-mergeSort [x] <span class="fu">=</span> [x]
-mergeSort xs  <span class="fu">=</span> <span class="kw">let</span> (as,bs) <span class="fu">=</span> split xs
-                <span class="kw">in</span> merge (mergeSort as) (mergeSort bs)</code></pre></td></tr></table></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource haskell numberLines"><code class="sourceCode haskell"><a class="sourceLine" id="cb4-1" data-line-number="1">merge []         ys                   <span class="fu">=</span> ys</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">merge xs         []                   <span class="fu">=</span> xs</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">merge xs<span class="fu">@</span>(x<span class="fu">:</span>xt) ys<span class="fu">@</span>(y<span class="fu">:</span>yt) <span class="fu">|</span> x <span class="fu">&lt;=</span> y    <span class="fu">=</span> x <span class="fu">:</span> merge xt ys</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">                          <span class="fu">|</span> otherwise <span class="fu">=</span> y <span class="fu">:</span> merge xs yt</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">split (x<span class="fu">:</span>y<span class="fu">:</span>zs) <span class="fu">=</span> <span class="kw">let</span> (xs,ys) <span class="fu">=</span> split zs <span class="kw">in</span> (x<span class="fu">:</span>xs,y<span class="fu">:</span>ys)</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">split [x]      <span class="fu">=</span> ([x],[])</a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">split []       <span class="fu">=</span> ([],[])</a>
+<a class="sourceLine" id="cb4-9" data-line-number="9"></a>
+<a class="sourceLine" id="cb4-10" data-line-number="10">mergeSort []  <span class="fu">=</span> []</a>
+<a class="sourceLine" id="cb4-11" data-line-number="11">mergeSort [x] <span class="fu">=</span> [x]</a>
+<a class="sourceLine" id="cb4-12" data-line-number="12">mergeSort xs  <span class="fu">=</span> <span class="kw">let</span> (as,bs) <span class="fu">=</span> split xs</a>
+<a class="sourceLine" id="cb4-13" data-line-number="13">                <span class="kw">in</span> merge (mergeSort as) (mergeSort bs)</a></code></pre></div>
 </section>
 <section id="figures-sections" class="level2">
 <h2>Figures &amp; Sections</h2>
 <p>Unfortunately, HTML figures and sections don’t have special Markdown syntax. To include them in your document, you’ll have to use the raw HTML. On the bright side, this usually ends up being pretty painless.</p>
-<p>In particular for sections, if you’re satisfied with the top-most headings being wrapped in <code>&lt;section&gt;</code> tags, you can use the <code>--section-divs</code> flag to <code>pandoc</code> to automatically wrap sections in divs. This is already enabled in the Makefile we ship with this project.</p>
+<p>In particular for sections, if you’re satisfied with the top-most headings being wrapped in <code>&lt;section&gt;</code> tags, you can use the <code>--section-divs</code> flag to <code>pandoc</code> to automatically wrap sections in divs. This is already enabled in the Makefile we ship with this project. Regardless, if you have any leading text before your first heading, you will need to wrap this text in a <code>&lt;section&gt;</code> tag.</p>
 <p>Tufte Pandoc CSS improves support for full-width tables and code blocks. Special attention has been given to ensure that they’re fully responsive at all viewports, just like normal full-width figures. Here’s a sample full-width table:</p>
 <figure class="fullwidth">
 <table>

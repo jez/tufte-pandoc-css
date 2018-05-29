@@ -49,7 +49,7 @@ h1 { font-weight: 400;
 h2 { font-style: italic;
      font-weight: 400;
      margin-top: 2.1rem;
-     margin-bottom: 0;
+     margin-bottom: 1.4rem;
      font-size: 2.2rem;
      line-height: 1; }
 
@@ -57,7 +57,7 @@ h3 { font-style: italic;
      font-weight: 400;
      font-size: 1.7rem;
      margin-top: 2rem;
-     margin-bottom: 0;
+     margin-bottom: 1.4rem;
      line-height: 1; }
 
 hr { display: block;
@@ -85,10 +85,10 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
-p, ol, ul { font-size: 1.4rem; }
+p, ol, ul { font-size: 1.4rem;
+            line-height: 2rem; }
 
-p { line-height: 2rem;
-    margin-top: 1.4rem;
+p { margin-top: 1.4rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline; }
@@ -115,11 +115,13 @@ blockquote footer { width: 55%;
                     font-size: 1.1rem;
                     text-align: right; }
 
-section>ol, section>ul { width: 45%;
-                         -webkit-padding-start: 5%;
-                         -webkit-padding-end: 5%; }
+section > p, section > footer, section > table { width: 55%; }
 
-li { padding: 0.5rem 0; }
+/* 50 + 5 == 55, to be the same width as paragraph */
+section > ol, section > ul { width: 50%;
+                             -webkit-padding-start: 5%; }
+
+li:not(:first-child) { margin-top: 0.25rem; }
 
 figure { padding: 0;
          border: 0;
@@ -180,8 +182,7 @@ img { max-width: 100%; }
 
 .sidenote-number { counter-increment: sidenote-counter; }
 
-.sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) " ";
-                                           font-family: et-book-roman-old-style;
+.sidenote-number:after, .sidenote:before { font-family: et-book-roman-old-style;
                                            position: relative;
                                            vertical-align: baseline; }
 
@@ -196,8 +197,6 @@ img { max-width: 100%; }
 blockquote .sidenote, blockquote .marginnote { margin-right: -82%;
                                                min-width: 59%;
                                                text-align: left; }
-
-p, footer, table { width: 55%; }
 
 div.fullwidth, table.fullwidth { width: 100%; }
 
@@ -250,7 +249,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 @media (max-width: 760px) { body { width: 84%;
                                    padding-left: 8%;
                                    padding-right: 8%; }
-                            p, footer { width: 100%; }
+                            hr, section > p, section > footer, section > table { width: 100%; }
                             pre.code { width: 97%; }
                             section > ol { width: 90%; }
                             section > ul { width: 90%; }

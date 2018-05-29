@@ -58,17 +58,6 @@ pre:not(.sourceCode) {
   overflow-x: auto;
 }
 
-/* But if there are line numbers, the inner pre *doesn't* get a .sourceCode
- * class, so we want to reset it to the full width of the table container. */
-td.sourceCode pre {
-  width: initial;
-}
-/* We don't want the line numbers to overflow; rather, we want the table to
- * reflow to have enough room to show everthing without scrolling. */
-td.lineNumbers pre {
-  overflow-x: initial;
-}
-
 div.sourceCode code,
 pre:not(.sourceCode) code {
   font-size: 0.9rem;
@@ -79,21 +68,9 @@ pre:not(.sourceCode) code {
   width: 100%;
 }
 
-/* We've handled all the margin/padding on the outer-most div.sourceCode */
-div.sourceCode pre {
-  padding: 0;
-  margin: 0;
-}
-
 @media (max-width: 760px) {
   div.sourceCode,
   pre:not(.sourceCode) {
     width: 100%;
   }
-}
-
-/* Pandoc-generated line numbers need the same stylings as normal <code> */
-.lineNumbers pre {
-  line-height: 1.42;
-  font-size: 0.9rem;
 }
