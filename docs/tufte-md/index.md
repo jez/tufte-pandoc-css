@@ -5,6 +5,7 @@ header-includes:
 - '<link rel="stylesheet" href="latex.css"/>'
 ---
 
+<section>
 
 Tufte CSS provides tools to style web articles using the ideas demonstrated by
 Edward Tufte's books and handouts. Tufte's style is known for its simplicity,
@@ -37,6 +38,8 @@ maybe you can find a way to make them useful on the web". Tufte CSS is merely
 a sketch of one way to implement this particular set of ideas. It should be a
 starting point, not a design goal, because any project should present their
 information as best suits their particular circumstances.
+
+</section>
 
 
 ## Getting Started

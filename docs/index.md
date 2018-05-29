@@ -5,6 +5,8 @@ author: Jake Zimmerman
 date: 'November 3, 2016'
 ---
 
+<section>
+
 Tufte Pandoc CSS is an attempt to make it as easy as possible to get started
 using [Tufte CSS][^tufte-css] to write content. It does this by leveraging
 Pandoc Markdown's existing features, along with a few new ones implemented as
@@ -12,6 +14,8 @@ a [JSON filter].
 
 [^tufte-css]:
   {-} If you've never heard of Tufte CSS before, take a second to check it out!
+
+</section>
 
 
 ## Sidenotes in Markdown
@@ -113,7 +117,8 @@ side, this usually ends up being pretty painless.
 In particular for sections, if you're satisfied with the top-most headings being
 wrapped in `<section>` tags, you can use the `--section-divs` flag to `pandoc`
 to automatically wrap sections in divs. This is already enabled in the Makefile
-we ship with this project.
+we ship with this project. Regardless, if you have any leading text before your
+first heading, you will need to wrap this text in a `<section>` tag.
 
 Tufte Pandoc CSS improves support for full-width tables and code blocks. Special
 attention has been given to ensure that they're fully responsive at all
