@@ -1,5 +1,2 @@
 /* The default x-height for code is slightly too large in side notes */
 .marginnote code, .sidenote code { font-size: 0.9rem; }
-
-/* https://github.com/edwardtufte/tufte-css/pull/126 */
-h2, h3 { margin-bottom: 1.4rem; }
