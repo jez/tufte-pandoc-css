@@ -79,3 +79,9 @@ pre:not(.sourceCode) code {
 .katex {
   font-size: inherit !important;
 }
+
+/* Wrap long URLs in references */
+#refs a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
