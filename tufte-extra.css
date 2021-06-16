@@ -17,3 +17,9 @@ code {
     content: counter(sidenote-counter);
     left: -0.4rem;
 }
+
+/* To get spacing between lists, use paragraphs.
+ * 0.25rem of spacing between list elements looks bad. */
+li:not(:first-child) {
+    margin-top: initial;
+}
