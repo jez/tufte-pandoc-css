@@ -49,18 +49,26 @@ figure.fullwidth table {
  *
  * Code blocks with a language look like div.sourceCode > pre.sourceCode
  * Otherwise, it's just a pre (without .sourceCode) */
+
+/* Unset the tufte-css defaults that we'd like to overwrite */
+pre > code {
+  margin-left: initial;
+  overflow-x: initial;
+  display: initial;
+}
+
+.sourceCode.numberLines a:link {
+  text-decoration: initial;
+  background: initial;
+  text-shadow: initial;
+}
+
 div.sourceCode,
 pre:not(.sourceCode) {
   padding: 1.4rem;
   margin: -0.7rem -1.4rem;
   width: 55%;
-  font-size: 0.9rem;
   overflow-x: auto;
-}
-
-div.sourceCode code,
-pre:not(.sourceCode) code {
-  font-size: 0.9rem;
 }
 
 .fullwidth div.sourceCode,
@@ -71,7 +79,13 @@ pre:not(.sourceCode) code {
 @media (max-width: 760px) {
   div.sourceCode,
   pre:not(.sourceCode) {
+    padding: 1.4rem 8vw;
+    margin: -0.7rem -8vw;
     width: 100%;
+  }
+
+  .fullwidth {
+    max-width: 100%;
   }
 }
 
