@@ -7,3 +7,13 @@
 code {
     font-size: 1.05rem;
 }
+
+/* Also make the sidenote numbers hang */
+.sidenote {
+    text-indent: -0.4rem;
+}
+.sidenote:before {
+    /* removes trailing space from the counter content */
+    content: counter(sidenote-counter);
+    left: -0.4rem;
+}
