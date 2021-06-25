@@ -26,31 +26,30 @@ li:not(:first-child) {
 
 /* To get the pandoc-generated bibliography to match style, define csl classes. */
 div.csl-bib-body {
-    font-size: 1.4rem;
     width: 55%;
 }
 div.csl-entry {
     clear: both;
-    margin-top: .5em;
+    margin-top: .5rem;
 }
 .hanging div.csl-entry {
-    margin-left: 2em;
-    text-indent: -2em;
+    margin-left: 2rem;
+    text-indent: -2rem;
 }
 div.csl-left-margin {
-    min-width: 2em;
+    min-width: 2rem;
     float: left;
 }
 div.csl-right-inline {
-    margin-left: 2em;
-    padding-left: 1em;
+    margin-left: 2rem;
+    padding-left: 1rem;
 }
 div.csl-indent {
-    margin-left: 2em;
+    margin-left: 2rem;
 }
 div.hanging-indent{
-    margin-left: 1.5em;
-    text-indent: -1.5em;
+    margin-left: 1.5rem;
+    text-indent: -1.5rem;
 }
 
 @media (max-width: 760px) {
