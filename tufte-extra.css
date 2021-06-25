@@ -23,3 +23,38 @@ code {
 li:not(:first-child) {
     margin-top: initial;
 }
+
+/* To get the pandoc-generated bibliography to match style, define csl classes. */
+div.csl-bib-body {
+  font-size: 1.4rem;
+  width: 55%; 
+}
+div.csl-entry {
+  clear: both;
+  margin-top: .5em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+div.hanging-indent{
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+@media (max-width: 760px) {
+  div.csl-bib-body {
+    width: 100%;
+  }
+}
