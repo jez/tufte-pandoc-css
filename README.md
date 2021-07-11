@@ -24,6 +24,11 @@ footnotes (`[^1]`) into side notes.
 >
 > You might be interested in [Tufte Pandoc Jekyll], which wraps the files
 > distributed here into a Jekyll gem-based theme.
+>
+> ### Looking for the same features, but a different look?
+>
+> You might be interested in [Pandoc Markdown CSS Theme], a theme with much of
+> the same features as this theme, but with a more easily customizable look.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -151,6 +156,7 @@ make my-pandoc-markdown-file.md
 [tufte-md]: https://jez.io/tufte-pandoc-css/tufte-md/
 [Tufte Pandoc CSS homepage]: https://jez.io/tufte-pandoc-css/
 [Tufte Pandoc Jekyll]: https://github.com/jez/tufte-pandoc-jekyll
+[Pandoc Markdown CSS Theme]: https://github.com/jez/pandoc-markdown-css-theme
 [tufte-md-src]: docs/tufte-md/index.md
 [homepage-src]: docs/index.md
 [`Makefile`]: Makefile
