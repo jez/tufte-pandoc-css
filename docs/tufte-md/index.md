@@ -290,8 +290,8 @@ those cases, a margin figure may be most appropriate. To place figures in the
 margin, just wrap an image (or whatever) in a margin note inside a
 <code>p</code> tag, as seen to the right of this paragraph.
 
-[^rhino]: {-}
-  ![Image of a Rhinoceros](img/rhino.png) F.J. Cole, "The History of Albrecht
+[^rhino]: 
+  {-} ![Image of a Rhinoceros](img/rhino.png) F.J. Cole, "The History of Albrecht
   Dürer's Rhinoceros in Zooological Literature," *Science, Medicine, and
   History: Essays on the Evolution of Scientific Thought and Medical Practice*
   (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward
