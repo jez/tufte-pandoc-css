@@ -57,3 +57,30 @@ div.hanging-indent{
         width: 100%;
     }
 }
+
+/* Prevent superscripts and subscripts from affecting line-height */
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub { 
+    top: 0.4em; 
+}
+
+/* Replicate styling from sidenote numbers to footnote numbers */
+a.footnote-ref {
+    background: unset;
+    text-shadow: unset;
+    font-size: 1rem;
+    position: relative;
+    top: -0.1rem;
+    left: 0.1rem;
+    display: inline;
+}
+.footnote-ref sup {
+    font-family: et-book-roman-old-style;
+    font-size: inherit;
+    vertical-align: inherit;
+    line-height: inherit;
+}
