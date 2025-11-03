@@ -19,7 +19,7 @@ all: $(TARGETS)
 		--katex \
 		--section-divs \
 		--from markdown+tex_math_single_backslash \
-		--filter pandoc-sidenote \
+		--lua-filter pandoc-sidenote.lua \
 		--to html5+smart \
 		--template=tufte \
 		$(foreach style,$(STYLES),--css $(notdir $(style))) \

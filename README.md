@@ -68,7 +68,7 @@ that ultimately means is that you should use these files however your heart sees
 fit. In practice, here are some tips for some things you may want to do to get
 set up.
 
-First, install `pandoc-sidenote` to your PATH.
+First, install `pandoc-sidenote`.
 
 - This lets `pandoc` compile footnotes into sidenotes.
 - Instructions are on the [`pandoc-sidenote`] homepage.
